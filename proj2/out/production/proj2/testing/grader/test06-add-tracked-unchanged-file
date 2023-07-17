@@ -1,0 +1,19 @@
+# Check that we can check out a previous version.
+> init
+<<<
++ wug.txt notwug.txt
+> add wug.txt
+<<<
+> commit "ye"
+<<<
+> rm wug.txt
+<<<
+> commit "lala"
+<<<
++ wug.txt wug.txt
+> add wug.txt
+<<<
+> rm wug.txt
+<<<
+> status
+<<<

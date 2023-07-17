@@ -1,0 +1,26 @@
+# Check that we can check out a previous version.
+> init
+<<<
++ wug.txt wug.txt
+> add wug.txt
+<<<
+> commit "wug v1"
+<<<
+> branch potato
+<<<
+> checkout potato
+<<<
++ hello.txt hello.txt
+> add hello.txt
+<<<
+> commit "howdy"
+<<<
+> checkout master
+<<<
++ notwug.txt notwug.txt
+> add notwug.txt
+<<<
+> commit "not wuggy"
+<<<
+> merge potato
+<<<

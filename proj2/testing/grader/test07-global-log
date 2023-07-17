@@ -1,0 +1,13 @@
+# Check that we can check out a previous version.
+> init
+<<<
++ wug.txt wug.txt
++ hello.txt hello.txt
+> add wug.txt
+<<<
+> add hello.txt
+<<<
+>rm hello.txt
+<<<
+> status
+<<<
